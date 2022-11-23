@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true"/>
+    <domain-config cleartextTrafficPermitted="false">
+        <!-- List the domains for which you want ensure HTTPS traffic -->
+        <domain includeSubdomains="true">anambra.tax</domain>
+        <trust-anchors>
+            <certificates src="@raw/certificate"/>
+        </trust-anchors>
+    </domain-config>
+</network-security-config>
